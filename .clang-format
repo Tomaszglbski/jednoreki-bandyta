@@ -1,0 +1,30 @@
+
+Language: Cpp
+BasedOnStyle: Google
+
+# Szerokość wcięć i brak tabulacji
+IndentWidth: 4
+UseTab: Never
+ColumnLimit: 120 # Google standardowo używa 80, ale 120 jest znacznie wygodniejsze przy długich nazwach funkcji w ESP-IDF
+
+# Styl klamer - zawsze w tej samej linii
+BreakBeforeBraces: Attach
+
+# Pozwala na bardzo krótkie funkcje/instrukcje w jednej linii (np. gettery/settery)
+AllowShortFunctionsOnASingleLine: All
+AllowShortIfStatementsOnASingleLine: WithoutElse
+AllowShortLoopsOnASingleLine: true
+
+# Wskaźniki i referencje (W stylu Google 'int* ptr' przykleja się do typu)
+PointerAlignment: Left # int* ptr; oraz std::string& msg;
+DerivePointerAlignment: false
+
+# Porządkowanie include'ów (Google układa je alfabetycznie w grupach)
+SortIncludes: true
+
+# Formatowanie makr (dodane pod kątem specyfiki ESP-IDF)
+IndentPPDirectives: AfterHash
+AlignConsecutiveMacros: true
+
+# Dodatki dla C++ (automatyczny komentarz na końcu namespace)
+FixNamespaceComments: true
