@@ -4,6 +4,7 @@ BasedOnStyle: Google
 
 # Szerokość wcięć i brak tabulacji
 IndentWidth: 4
+AccessModifierOffset: -4 
 UseTab: Never
 ColumnLimit: 120 # Google standardowo używa 80, ale 120 jest znacznie wygodniejsze przy długich nazwach funkcji w ESP-IDF
 
