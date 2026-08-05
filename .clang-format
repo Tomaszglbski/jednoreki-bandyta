@@ -28,3 +28,5 @@ AlignConsecutiveMacros: true
 
 # Dodatki dla C++ (automatyczny komentarz na końcu namespace)
 FixNamespaceComments: true
+
+NamespaceIndentation: All
