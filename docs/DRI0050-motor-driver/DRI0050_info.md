@@ -53,7 +53,7 @@ Datasheet CH552 i schematu:
 
 ![alt text](image.png)
 
-### W bibliotece z wiki baudrate jest ustawiony na 9600
+### W przykładowym kodzie z wiki baudrate jest ustawiony na 9600 i nie ma bitu parzystości
 
 
 
