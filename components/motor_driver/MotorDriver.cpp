@@ -54,7 +54,7 @@ esp_err_t MotorDriver::init(uint16_t pwm_duty, uint16_t pwm_frq) {
     err = mbc_master_start();
     if (err != ESP_OK) {
         ESP_LOGE(TAG, "mb controller start fail, err=%x.", err);
-        uart_num return err;
+        return err;
     }
 
     // setting up UART pins
