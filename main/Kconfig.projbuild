@@ -1,0 +1,33 @@
+menu "Jednoreki Bandyta Configuration"
+    
+    menu "Modbus" 
+        
+        config MODBUS_TX_GPIO
+        int "Modbus TX GPIO number"
+        default 9
+        range 0 48
+        help
+            WARNING: 0, 3, 45, 46 are strapping pins!
+
+        config MODBUS_RX_GPIO
+        int "Modbus RX GPIO number"
+        default 10
+        range 0 48
+        help
+            WARNING: 0, 3, 45, 46 are strapping pins!
+
+        config MODBUS_UART_PORT
+        int "Uart port number used by Modbus"
+        default 2
+        range 0 2
+        help
+            WARNING: UART0 is used as the serial port for download and log printing.
+
+        config MODBUS_UART_BAUDRATE
+        int "Baudrate used by Modbus Uart"
+        default 9600
+        help
+            9600 is the default value used in DFRobots library for DRI0050
+    
+    endmenu
+endmenu
