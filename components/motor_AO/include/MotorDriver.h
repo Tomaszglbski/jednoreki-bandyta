@@ -13,7 +13,7 @@ class MotorDriver {
 
     esp_err_t init(uint16_t pwm_duty, uint16_t pwm_frq);
     esp_err_t startSpinning();
-    esp_err_t stopSpinnig();
+    esp_err_t stopSpinning();
 
    private:
     void* master_handler = nullptr;

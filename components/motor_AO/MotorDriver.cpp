@@ -127,7 +127,7 @@ esp_err_t MotorDriver::startSpinning() {
     return err;
 }
 
-esp_err_t MotorDriver::stopSpinnig() {
+esp_err_t MotorDriver::stopSpinning() {
     const mb_parameter_descriptor_t* param_descriptor = nullptr;
 
     esp_err_t err = mbc_master_get_cid_info(CID_PWM_OUT_TOGGLE, &param_descriptor);
