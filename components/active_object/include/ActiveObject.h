@@ -32,7 +32,7 @@ private:
     QueueHandle_t MessageQueue;
 
     void run();
-    virtual esp_err_t StateMachinehandler(const Signal signalID) = 0;
+    virtual void StateMachineHandler(const Signal signalID) = 0;
 };
 
 #endif

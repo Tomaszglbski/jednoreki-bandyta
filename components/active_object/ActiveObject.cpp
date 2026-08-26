@@ -34,7 +34,7 @@ void ActiveObject::run(){
         
         if (xQueueReceive(MessageQueue, &signal, portMAX_DELAY) != errQUEUE_EMPTY){
             
-            StateMachinehandler(signal);
+            StateMachineHandler(signal);
         } 
     }
 }
