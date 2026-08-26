@@ -13,6 +13,10 @@ enum class Signal : uint8_t{
 /*Motor related signals*/    
     START_SPIN,
     STOP_SPIN,
+    SPIN_TIMEOUT,
+
+/*User input signals*/
+    LEVER_PULLED,
 
 /*Last enum entry - event quanity*/
     SIGNAL_COUNT
