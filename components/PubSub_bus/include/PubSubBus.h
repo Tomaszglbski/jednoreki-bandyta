@@ -21,9 +21,9 @@ public:
     esp_err_t publishEvent(const Signal signalID) override;
 private:
 
-    Subscriber* subscribers[MAX_SUBSCRIBERS];
+    Subscriber* subscribers[MAX_SUBSCRIBERS]{};
 
-    uint16_t eventSubscriptions[EVENT_COUNT];
+    uint16_t eventSubscriptions[EVENT_COUNT]{};
 
 };
 
