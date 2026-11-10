@@ -40,8 +40,6 @@ For frequency higher than 2K, please refer to the following frequency value:
 - 0.2 A bez obciążenia
 
 ## Nie zatrzymywać bębnów gdy kręci się silnik
-## Nie zmieniać nagle PWM z max do 0
-
 
 ### Na płytce znajduje sie CH552 który jest podłączony do 3.3V, więc sterownik komunikuje się po 3.3V
 
